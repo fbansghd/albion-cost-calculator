@@ -19,6 +19,7 @@ albion-cost-calculator/
 ├── calculator.py          # 計算関数（レシピ生成、原価計算）
 ├── item_lists.py          # アイテムリスト定義
 ├── profit_analyzer.py     # メインスクリプト
+├── requirements.txt       # 依存パッケージ
 └── README.md             # このファイル
 ```
 
@@ -30,6 +31,7 @@ albion-cost-calculator/
 | `calculator.py` | レシピ生成、原価計算、アイテムリスト生成などの関数を提供 |
 | `item_lists.py` | 分析対象のアイテム名リストとデフォルト設定を定義 |
 | `profit_analyzer.py` | APIからデータを取得し、利益分析を実行するメインスクリプト |
+| `requirements.txt` | 依存パッケージのリスト（aiohttp, pandas） |
 
 ## インストール
 
@@ -40,14 +42,16 @@ albion-cost-calculator/
 
 ### 依存パッケージのインストール
 
-```bash
-pip install aiohttp pandas
-```
-
-または、requirements.txtがある場合：
+requirements.txtを使用してインストール（推奨）：
 
 ```bash
 pip install -r requirements.txt
+```
+
+または、個別にインストール：
+
+```bash
+pip install aiohttp pandas
 ```
 
 ## 使用方法
